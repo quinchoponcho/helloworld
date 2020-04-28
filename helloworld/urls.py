@@ -25,3 +25,4 @@ url(r'^$', views.index, name='index'),
 url(r'^myapp/', include('myapp.urls')),
 url(r'^admin/', admin.site.urls),
 ]
+
