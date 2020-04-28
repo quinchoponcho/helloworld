@@ -36,5 +36,5 @@ def dashBoard(request):
 	context = {'customers':customers, 'orders':orders,
 	'total_customers':total_customers,'total_orders':total_orders, 
 	'delivered':delivered, 'pending':pending}
-	return render(request, 'accounts/dashBoard.html', context)
+	return render(request, 'dashBoard.html', context)
 
