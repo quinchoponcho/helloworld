@@ -1,4 +1,6 @@
 from django import forms
+from django.forms import ModelForm
+from .models import Customer, Order
 from myapp.models import Name
 
 class NameForm(forms.ModelForm):
@@ -7,3 +9,8 @@ class NameForm(forms.ModelForm):
     class Meta:
         model = Name
         fields = ('name_value',)
+       
+class OrderForm(ModelForm):
+	class Meta:
+		model = Order
+		fields = '__all__'
