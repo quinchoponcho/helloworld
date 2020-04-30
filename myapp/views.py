@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
 from . forms import OrderForm
-from .filters import OrderFilter
 from myapp.models import Name
 from myapp.forms import NameForm
 
