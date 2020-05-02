@@ -1,9 +1,11 @@
+
 from django.conf.urls import url
-from django.urls import path
+from django.conf.urls import include
 from myapp import views
-from . import views
 
 urlpatterns = [
 
-    path('', views.dashBoard, name="dashboard"),
+    url(r'^$', views.dashBoard, name='dashboard'),
+    #url(r'^myapp/', include('myapp.urls')),
+
 ]
